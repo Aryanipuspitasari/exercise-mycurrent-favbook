@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: midnightblue;
+  font-size: 1.125em;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 25em;
+  box-shadow: 0 0.25rem 1em -0.25rem blue;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  color: steelblue;
+}
+
+button {
+  background-color: midnightblue;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  padding: 1em;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+button :hover {
+  background-color: blue;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero {
+  max-width: 64em;
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+  min-height: 100vh;
+}
